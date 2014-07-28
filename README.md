@@ -4,7 +4,7 @@
 
 ##Getting Started
 
-Run the following command to download the repo and unpack it into `/nodejs-starter-kit`.
+Run the following command to download the repo and unpack it into `/nodejs-starter-kit-master`.
 
 ```bash
 $ curl -L https://github.com/neogeek/nodejs-starter-kit/archive/master.tar.gz | tar -xz
@@ -53,3 +53,20 @@ $ node web.js
 ```
 
 Once the application is running you can access it at <http://localhost:5000/>.
+
+##Setting Up Bash Alias
+
+Add the following to your `~/.bash_profile` and restart terminal. You will now be able to create a new project using the starter kit by typing `nodejs-project test` (replacing _test_ with your new project name).
+
+```bash
+nodejs-project-builder() {
+
+    curl -L https://github.com/neogeek/nodejs-starter-kit/archive/master.tar.gz | tar -xz
+    mv nodejs-starter-kit-master $1
+    cd $1
+    npm install
+
+}
+
+alias nodejs-project=nodejs-project-builder
+```
