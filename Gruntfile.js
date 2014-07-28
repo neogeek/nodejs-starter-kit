@@ -5,6 +5,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-handlebars');
     grunt.loadNpmTasks('grunt-contrib-stylus');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-jslint');
     grunt.loadNpmTasks('grunt-notify');
 
     grunt.initConfig({
@@ -25,6 +26,23 @@ module.exports = function (grunt) {
                     'static/templates/compiled.js': ['static/templates/handlebars/**/*.hbs']
                 }
 
+            }
+
+        },
+
+        jslint: {
+
+            client: {
+                src: ['static/js/**/*.js'],
+                directives: {
+                    browser: true,
+                    nomen: true,
+                    globals: {
+                        'define': true,
+                        'module': true,
+                        'require': true
+                    }
+                }
             }
 
         },
@@ -57,6 +75,6 @@ module.exports = function (grunt) {
 
     });
 
-    grunt.registerTask('default', [ 'handlebars', 'stylus' ]);
+    grunt.registerTask('default', [ 'handlebars', 'jslint', 'stylus' ]);
 
 };
