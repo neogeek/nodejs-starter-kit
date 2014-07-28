@@ -1,0 +1,7 @@
+.sass-cache/
+
+node_modules/
+static/bower_components/
+
+static/css/styles.css
+static/templates/compiled.js

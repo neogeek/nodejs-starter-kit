@@ -1,0 +1,9 @@
+{
+    "name": "nodejs-starter-kit",
+    "dependencies": {
+        "jquery": "2.1.1",
+        "handlebars": "1.3.0",
+        "requirejs": "2.1.14"
+    },
+    "private": true
+}
