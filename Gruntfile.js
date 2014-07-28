@@ -2,12 +2,10 @@ module.exports = function (grunt) {
 
     'use strict';
 
-    [
-        'grunt-contrib-stylus',
-        'grunt-contrib-handlebars',
-        'grunt-contrib-watch',
-        'grunt-notify'
-    ].map(grunt.loadNpmTasks);
+    grunt.loadNpmTasks('grunt-contrib-handlebars');
+    grunt.loadNpmTasks('grunt-contrib-stylus');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-notify');
 
     grunt.initConfig({
 

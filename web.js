@@ -1,8 +1,8 @@
 /*globals process, __dirname */
 
 var express = require('express');
-var server = express();
+var app = express();
 
-server.use(express.static(__dirname + '/static'));
+app.use(express.static(__dirname + '/static'));
 
-server.listen(process.env.PORT || 5000);
+app.listen(process.env.PORT || 5000);
