@@ -3,8 +3,8 @@ module.exports = function (grunt) {
     'use strict';
 
     [
+        'grunt-contrib-stylus',
         'grunt-contrib-handlebars',
-        'grunt-contrib-sass',
         'grunt-contrib-watch',
         'grunt-notify'
     ].map(grunt.loadNpmTasks);
@@ -31,7 +31,7 @@ module.exports = function (grunt) {
 
         },
 
-        sass: {
+        stylus: {
 
             dist: {
 
@@ -50,15 +50,15 @@ module.exports = function (grunt) {
                 tasks: ['handlebars']
             },
 
-            sass: {
+            stylus: {
                 files: ['static/css/**/*.scss'],
-                tasks: ['sass']
+                tasks: ['stylus']
             }
 
         }
 
     });
 
-    grunt.registerTask('default', [ 'handlebars', 'sass' ]);
+    grunt.registerTask('default', [ 'handlebars', 'stylus' ]);
 
 };
