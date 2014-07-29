@@ -1,9 +1,15 @@
 {
     "name": "nodejs-starter-kit",
+    "version": "0.0.1",
+    "description": "This repo is a starter kit for working with Node.js, Handlebars (both server and client side), SASS (through Stylus), and RequireJS. Client-side dependency management is through Bower.",
     "dependencies": {
         "jquery": "2.1.1",
         "handlebars": "1.3.0",
         "requirejs": "2.1.14"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/neogeek/nodejs-starter-kit.git"
     },
     "private": true
 }
