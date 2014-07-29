@@ -10,7 +10,7 @@ app.engine('hbs', require('express-hbs').express3());
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/src/views');
 
-app.get('/', function (res, res) {
+app.get('/', function (req, res) {
 
     res.render('index', {
         title: 'Node.js Starter Kit'
