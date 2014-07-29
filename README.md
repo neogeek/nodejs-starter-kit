@@ -38,6 +38,16 @@ To watch for changes to any Handlebars or SASS files run:
 $ grunt watch
 ```
 
+##Testing
+
+Tests are powered by [Jasmine](http://jasmine.github.io) and [PhantomJS](http://phantomjs.org). To run all tests use this command:
+
+```bash
+$ npm test
+```
+
+A `.travis.yml` configuration file is included to support automated testing through [Travis CI](https://travis-ci.org).
+
 ##Running Server
 
 If you have the [Heroku Toolbelt](https://toolbelt.heroku.com) installed you can start the sample applications with this command:
