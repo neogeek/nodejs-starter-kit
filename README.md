@@ -10,8 +10,6 @@ Run the following command to download the repo and unpack it into `/nodejs-start
 $ curl -L https://github.com/neogeek/nodejs-starter-kit/archive/master.tar.gz | tar -xz
 ```
 
-###Files
-
 All client-side files are located in `/static`. Bower components and compiled client-side Handlebars templates generated through `grunt` are also stored here.
 
 Server-side Handlebars templates are stored in `/src/views`.
