@@ -1,6 +1,9 @@
+[![](https://david-dm.org/neogeek/nodejs-starter-kit.svg)](https://david-dm.org/neogeek/nodejs-starter-kit/)
+[![](https://david-dm.org/neogeek/nodejs-starter-kit/dev-status.svg)](https://david-dm.org/neogeek/nodejs-starter-kit/#info=devDependencies)
+
 #Node.js Starter Kit
 
-> This repo is a starter kit for working with [Node.js](http://nodejs.org), [Handlebars](http://handlebarsjs.com) (both server and client side), [SASS](http://sass-lang.com) (through [Stylus](http://learnboost.github.io/stylus/)), and [RequireJS](http://requirejs.org). Client-side dependency management is through [Bower](http://bower.io). 
+> This repo is a starter kit for working with [Node.js](http://nodejs.org), [Handlebars](http://handlebarsjs.com) (both server and client side), [SASS](http://sass-lang.com) (through [Stylus](http://learnboost.github.io/stylus/)), and [RequireJS](http://requirejs.org). Client-side dependency management is through [Bower](http://bower.io).
 
 ##Getting Started
 
@@ -76,3 +79,9 @@ nodejs-project-builder() {
 
 alias nodejs-project=nodejs-project-builder
 ```
+
+##Demo
+
+A video covering the initial setup process and basic Handlebars usage is avalible at Vimeo. <http://vimeo.com/neogeek/nodejs-starter-kit-demo>
+
+[![](http://i.vimeocdn.com/video/484145719_1280.jpg)](http://vimeo.com/neogeek/nodejs-starter-kit-demo)
