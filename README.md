@@ -5,6 +5,8 @@
 
 > This repo is a starter kit for working with [Node.js](http://nodejs.org), [Handlebars](http://handlebarsjs.com) (both server and client side), [SASS](http://sass-lang.com) (through [Stylus](http://learnboost.github.io/stylus/)), and [RequireJS](http://requirejs.org). Client-side dependency management is through [Bower](http://bower.io).
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ##Getting Started
 
 Run the following command to download the repo and unpack it into `/nodejs-starter-kit-master`.

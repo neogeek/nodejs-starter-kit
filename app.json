@@ -1,0 +1,15 @@
+{
+    "name": "Node.js Starter Kit",
+    "description": "This repo is a starter kit for working with Node.js, Handlebars (both server and client side), SASS (through Stylus), and RequireJS. Client-side dependency management is through Bower.",
+    "repository": "https://github.com/neogeek/nodejs-starter-kit",
+    "keywords": [
+        "node",
+        "bower",
+        "express",
+        "grunt",
+        "handlebars",
+        "jasmine",
+        "stylus",
+        "jslint"
+    ]
+}
