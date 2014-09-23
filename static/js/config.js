@@ -12,10 +12,4 @@ require.config({
     }
 });
 
-define(['app'], function (app) {
-
-    'use strict';
-
-    window.app = app;
-
-});
+define(['app']);
