@@ -3,11 +3,11 @@ module.exports = function (grunt) {
     'use strict';
 
     grunt.loadNpmTasks('grunt-contrib-handlebars');
-    grunt.loadNpmTasks('grunt-contrib-stylus');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-jasmine');
     grunt.loadNpmTasks('grunt-jslint');
     grunt.loadNpmTasks('grunt-notify');
+    grunt.loadNpmTasks('grunt-sass');
 
     grunt.initConfig({
 
@@ -56,7 +56,7 @@ module.exports = function (grunt) {
 
         },
 
-        stylus: {
+        sass: {
 
             dist: {
 
@@ -84,7 +84,7 @@ module.exports = function (grunt) {
 
     });
 
-    grunt.registerTask('default', [ 'handlebars', 'jslint', 'stylus' ]);
+    grunt.registerTask('default', [ 'handlebars', 'jslint', 'sass' ]);
     grunt.registerTask('test', [ 'jasmine' ]);
 
 };
