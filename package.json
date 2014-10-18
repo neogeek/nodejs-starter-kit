@@ -9,12 +9,12 @@
     "license": "MIT",
     "dependencies": {
         "bower": "1.3.12",
-        "express": "4.9.5",
+        "express": "4.9.8",
         "express-hbs": "0.7.11",
         "express-enrouten": "1.1.1",
         "grunt": "0.4.5",
         "grunt-cli": "0.1.13",
-        "grunt-contrib-handlebars": "0.8.0",
+        "grunt-contrib-handlebars": "0.9.0",
         "grunt-contrib-jasmine": "0.8.0",
         "grunt-contrib-stylus": "0.20.0",
         "grunt-jslint": "1.1.12"
