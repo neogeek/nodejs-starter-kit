@@ -77,7 +77,7 @@ module.exports = function (grunt) {
 
             stylus: {
                 files: ['static/css/**/*.scss'],
-                tasks: ['stylus']
+                tasks: ['sass']
             }
 
         }
