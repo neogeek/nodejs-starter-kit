@@ -75,7 +75,7 @@ module.exports = function (grunt) {
                 tasks: ['handlebars']
             },
 
-            stylus: {
+            sass: {
                 files: ['static/css/**/*.scss'],
                 tasks: ['sass']
             }
