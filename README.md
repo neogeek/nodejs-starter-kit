@@ -1,3 +1,4 @@
+[![](https://api.travis-ci.org/neogeek/nodejs-starter-kit.svg)](https://travis-ci.org/neogeek/nodejs-starter-kit)
 [![](https://david-dm.org/neogeek/nodejs-starter-kit.svg)](https://david-dm.org/neogeek/nodejs-starter-kit/)
 [![](https://david-dm.org/neogeek/nodejs-starter-kit/dev-status.svg)](https://david-dm.org/neogeek/nodejs-starter-kit/#info=devDependencies)
 
