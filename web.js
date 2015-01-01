@@ -14,6 +14,6 @@ app.use(enrouten({ directory: 'src/routes' }));
 app.engine('hbs', hbs.express3());
 
 app.set('view engine', 'hbs');
-app.set('views', __dirname + '/src/views');
+app.set('views', __dirname + '/templates');
 
 app.listen(process.env.PORT || 5000);
