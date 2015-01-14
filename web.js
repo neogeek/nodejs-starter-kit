@@ -32,6 +32,12 @@ app.use(function (req, res, next) {
 
 app.use(enrouten({ directory: 'src/routes' }));
 
+app.use(function (req, res, next) {
+
+    res.status(404).render('error');
+
+});
+
 app.engine('hbs', hbs.express3());
 
 app.set('view engine', 'hbs');
