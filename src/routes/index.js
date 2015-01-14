@@ -2,7 +2,7 @@ var indexView = require('../views/index');
 
 module.exports = function (router) {
 
-    router.get('/*', function (req, res, next) {
+    router.use(function (req, res, next) {
 
         res.locals = {
             layout: 'template'
