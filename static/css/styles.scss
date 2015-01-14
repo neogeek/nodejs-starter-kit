@@ -21,18 +21,8 @@ a {
     color: #00f;
 }
 
-code {
-    padding: 0.4em;
+pre {
     font-family: 'Monaco', monospace;
     font-size: 0.8em;
     line-height: 1.3em;
-    background: #f9f9f9;
-}
-
-pre code {
-    display: block;
-    margin: 1em 0;
-    padding: 1em;
-    line-height: 1.7em;
-    overflow: auto;
 }
