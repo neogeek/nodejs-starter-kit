@@ -20,6 +20,16 @@ app.use(session({
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(function (req, res, next) {
+
+    res.locals = {
+        layout: 'template'
+    };
+
+    next();
+
+});
+
 app.use(enrouten({ directory: 'src/routes' }));
 
 app.engine('hbs', hbs.express3());
