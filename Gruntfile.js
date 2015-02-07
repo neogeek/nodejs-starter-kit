@@ -3,9 +3,9 @@ module.exports = function (grunt) {
     'use strict';
 
     grunt.loadNpmTasks('grunt-contrib-handlebars');
-    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-jasmine');
-    grunt.loadNpmTasks('grunt-jslint');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-notify');
     grunt.loadNpmTasks('grunt-sass');
 
@@ -39,19 +39,20 @@ module.exports = function (grunt) {
             }
         },
 
-        jslint: {
+        jshint: {
+
+            server: {
+                options: {
+                    jshintrc: true
+                },
+                src: ['src/**/*.js']
+            },
 
             client: {
-                src: ['static/js/**/*.js'],
-                directives: {
-                    browser: true,
-                    nomen: true,
-                    globals: {
-                        'define': true,
-                        'module': true,
-                        'require': true
-                    }
-                }
+                options: {
+                    jshintrc: true
+                },
+                src: ['static/js/**/*.js']
             }
 
         },
@@ -75,6 +76,11 @@ module.exports = function (grunt) {
                 tasks: ['handlebars']
             },
 
+            jshint: {
+                files: ['src/**/*.js', 'static/js/**/*.js'],
+                tasks: ['jshint']
+            },
+
             sass: {
                 files: ['static/css/**/*.scss'],
                 tasks: ['sass']
@@ -84,7 +90,7 @@ module.exports = function (grunt) {
 
     });
 
-    grunt.registerTask('default', [ 'handlebars', 'jslint', 'sass' ]);
+    grunt.registerTask('default', [ 'handlebars', 'jshint', 'sass' ]);
     grunt.registerTask('test', [ 'jasmine' ]);
 
 };

@@ -1,0 +1,21 @@
+{
+    "bitwise": true,
+    "curly": true,
+    "eqeqeq": true,
+    "forin": true,
+    "freeze": true,
+    "globals": {
+        "define": true,
+        "module": true,
+        "require": true
+    },
+    "immed": true,
+    "indent": 4,
+    "latedef": true,
+    "noarg": true,
+    "node": true,
+    "noempty": true,
+    "plusplus": true,
+    "quotmark": "single",
+    "undef": true
+}
