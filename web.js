@@ -32,9 +32,17 @@ app.use(function (req, res, next) {
 
 app.use(enrouten({ directory: 'src/routes' }));
 
+app.use(function (err, req, res, next) {
+
+    res.status(err.status || 500);
+    res.render('error', { status: err.status || 500, message: err.message });
+
+});
+
 app.use(function (req, res, next) {
 
-    res.status(404).render('error');
+    res.status(404);
+    res.render('error', { status: 404, message: 'Page Not Found' });
 
 });
 
