@@ -11,7 +11,7 @@ var hbs = require('express-hbs');
 var hbs_helpers = require('./static/templates/helpers.js')(hbs);
 
 app.use(session({
-    secret: 'secret',
+    secret: process.env.SECRET || 'secret',
     resave: true,
     saveUninitialized: true
 }));
