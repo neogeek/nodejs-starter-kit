@@ -10,8 +10,6 @@ var enrouten = require('express-enrouten');
 var hbs = require('express-hbs');
 var hbs_helpers = require('./static/templates/helpers.js')(hbs);
 
-app.use(express.static(__dirname + '/static'));
-
 app.use(session({
     secret: 'secret',
     resave: true,
@@ -19,6 +17,8 @@ app.use(session({
 }));
 
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(express.static(__dirname + '/static'));
 
 app.use(function (req, res, next) {
 
