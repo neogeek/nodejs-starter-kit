@@ -1,7 +1,7 @@
-var indexView = require('../views/index');
+var index = require('../controllers/index');
 
 module.exports = function (router) {
 
-    router.get('/', indexView);
+    router.get('/', index.render);
 
 };
