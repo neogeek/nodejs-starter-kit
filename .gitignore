@@ -3,3 +3,5 @@ static/bower_components/
 
 static/css/styles.css
 static/templates/compiled.js
+
+.env
