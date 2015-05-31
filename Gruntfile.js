@@ -11,6 +11,8 @@ module.exports = function (grunt) {
                 options: {
                     amd: ['handlebars', 'handlebars.helpers'],
                     namespace: 'templates',
+                    partialRegex: /.*/,
+                    partialsPathRegex: /\/partials\//,
                     processName: function (path) {
                         return path.match(/([\w]+)\.hbs/)[1];
                     }
