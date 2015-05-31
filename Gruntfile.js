@@ -1,13 +1,6 @@
 module.exports = function (grunt) {
 
-    'use strict';
-
-    grunt.loadNpmTasks('grunt-contrib-handlebars');
-    grunt.loadNpmTasks('grunt-contrib-jasmine');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-notify');
-    grunt.loadNpmTasks('grunt-sass');
+    require('load-grunt-tasks')(grunt);
 
     grunt.initConfig({
 
