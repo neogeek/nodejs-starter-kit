@@ -26,14 +26,6 @@ module.exports = function (grunt) {
 
         },
 
-        jasmine: {
-            test: {
-                options: {
-                    specs: 'tests/*.js'
-                }
-            }
-        },
-
         jshint: {
 
             server: {
@@ -48,6 +40,13 @@ module.exports = function (grunt) {
                     jshintrc: true
                 },
                 src: ['static/js/**/*.js']
+            },
+
+            tests: {
+                options: {
+                    jshintrc: true
+                },
+                src: ['test/**/*.js']
             }
 
         },
@@ -72,7 +71,7 @@ module.exports = function (grunt) {
             },
 
             jshint: {
-                files: ['src/**/*.js', 'static/js/**/*.js'],
+                files: ['src/**/*.js', 'static/js/**/*.js', 'test/**/*.js'],
                 tasks: ['jshint']
             },
 
@@ -85,7 +84,6 @@ module.exports = function (grunt) {
 
     });
 
-    grunt.registerTask('default', [ 'handlebars', 'jshint', 'sass' ]);
-    grunt.registerTask('test', [ 'jasmine' ]);
+    grunt.registerTask('default', ['handlebars', 'jshint', 'sass']);
 
 };

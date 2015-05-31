@@ -1,4 +1,4 @@
-/*globals describe, it, expect */
+var assert = require('assert');
 
 describe('Sample Tests', function () {
 
@@ -6,7 +6,7 @@ describe('Sample Tests', function () {
 
     it('Testing basic Math.', function () {
 
-        expect(1 + 1).toBe(2);
+        assert.equal(1 + 1, 2);
 
     });
 
