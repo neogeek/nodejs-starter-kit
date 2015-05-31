@@ -1,5 +1,3 @@
-/*globals process, __dirname */
-
 var express = require('express');
 var app = express();
 
