@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-starter-kit",
+  "name": "@neogeek/nodejs-starter-kit",
   "version": "0.0.1",
   "description": "This repo is a starter kit for working with Node.js, Handlebars (both server and client side), SASS (through node-sass), and RequireJS.",
   "engines": {
