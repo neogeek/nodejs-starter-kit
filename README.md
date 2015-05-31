@@ -42,7 +42,7 @@ $ grunt watch
 
 ##Testing
 
-Tests are powered by [Jasmine](http://jasmine.github.io) and [PhantomJS](http://phantomjs.org). To run all tests use this command:
+Tests are powered by [mocha](http://mochajs.org/). To run all tests use this command:
 
 ```bash
 $ npm test
