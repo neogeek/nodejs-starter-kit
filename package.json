@@ -28,7 +28,7 @@
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install && ./node_modules/grunt-cli/bin/grunt default",
-    "test": "grunt test"
+    "test": "make test"
   },
   "keywords": [
     "node",
