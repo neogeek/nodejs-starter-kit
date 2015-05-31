@@ -24,7 +24,7 @@ module.exports = function (grunt) {
                 },
 
                 files: {
-                    'static/templates/compiled.js': ['static/templates/handlebars/**/*.hbs']
+                    'static/templates/compiled.js': ['src/views/**/*.hbs']
                 }
 
             }
@@ -72,7 +72,7 @@ module.exports = function (grunt) {
         watch: {
 
             handlebars: {
-                files: ['static/templates/handlebars/**/*.hbs'],
+                files: ['src/views/**/*.hbs'],
                 tasks: ['handlebars']
             },
 
