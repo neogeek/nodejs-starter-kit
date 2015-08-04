@@ -3,6 +3,8 @@ var app = express();
 
 var session = require('express-session');
 var bodyParser = require('body-parser');
+var compression = require('compression');
+
 var enrouten = require('express-enrouten');
 
 var hbs = require('express-hbs');
@@ -16,6 +18,8 @@ app.use(session({
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+app.use(compression());
 
 app.use(express.static(__dirname + '/static'));
 
