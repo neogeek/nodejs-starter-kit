@@ -2,6 +2,7 @@ node_modules/
 static/bower_components/
 
 static/css/styles.css
+static/js/build.min.js
 static/templates/compiled.js
 
 .env
