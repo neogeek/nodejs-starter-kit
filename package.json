@@ -24,7 +24,6 @@
   },
   "devDependencies": {
     "grunt-contrib-watch": "0.6.1",
-    "grunt-notify": "0.4.1",
     "mocha": "2.2.5"
   },
   "scripts": {
