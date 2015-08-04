@@ -6,7 +6,7 @@
   "dependencies": {
     "jquery": "2.1.4",
     "handlebars": "3.0.3",
-    "requirejs": "2.1.18"
+    "requirejs": "2.1.20"
   },
   "repository": {
     "type": "git",
