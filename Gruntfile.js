@@ -37,7 +37,8 @@ module.exports = function (grunt) {
 
             client: {
                 options: {
-                    jshintrc: true
+                    jshintrc: true,
+                    ignores: ['static/js/**/*.min.js']
                 },
                 src: ['static/js/**/*.js']
             },
