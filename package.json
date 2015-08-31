@@ -9,7 +9,7 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "1.13.3",
-    "bower": "1.4.1",
+    "bower": "1.5.2",
     "compression": "1.5.2",
     "express": "4.13.3",
     "express-enrouten": "1.2.1",
@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "grunt-contrib-watch": "0.6.1",
-    "mocha": "2.2.5"
+    "mocha": "2.3.0"
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install && ./node_modules/grunt-cli/bin/grunt default && make requirejs",
