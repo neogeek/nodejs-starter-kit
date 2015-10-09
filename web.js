@@ -52,7 +52,7 @@ app.use(function (req, res, next) {
 
 });
 
-app.engine('hbs', hbs.express3());
+app.engine('hbs', hbs.express4());
 
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/src/views');
