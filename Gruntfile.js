@@ -14,7 +14,7 @@ module.exports = function (grunt) {
                     partialRegex: /.*/,
                     partialsPathRegex: /\/partials\//,
                     processName: function (path) {
-                        return path.match(/([\w]+)\.hbs/)[1];
+                        return path.match(/([\w\-]+)\.hbs/)[1];
                     }
                 },
 
