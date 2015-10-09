@@ -5,4 +5,6 @@ static/css/styles.css
 static/js/build.min.js
 static/templates/compiled.js
 
+coverage.html
+
 .env
