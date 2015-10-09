@@ -8,9 +8,9 @@
   "main": "web.js",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "1.13.3",
-    "bower": "1.5.2",
-    "compression": "1.5.2",
+    "body-parser": "1.14.1",
+    "bower": "1.5.3",
+    "compression": "1.6.0",
     "express": "4.13.3",
     "express-enrouten": "1.2.1",
     "express-hbs": "0.8.4",
@@ -18,14 +18,14 @@
     "grunt": "0.4.5",
     "grunt-cli": "0.1.13",
     "grunt-contrib-handlebars": "0.10.2",
-    "grunt-contrib-jshint": "0.11.2",
+    "grunt-contrib-jshint": "0.11.3",
     "grunt-sass": "1.0.0",
-    "load-grunt-tasks": "3.2.0",
+    "load-grunt-tasks": "3.3.0",
     "requirejs": "2.1.20"
   },
   "devDependencies": {
     "grunt-contrib-watch": "0.6.1",
-    "mocha": "2.3.0"
+    "mocha": "2.3.3"
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install && ./node_modules/grunt-cli/bin/grunt default && make requirejs",
