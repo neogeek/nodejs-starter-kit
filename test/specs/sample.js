@@ -1,4 +1,4 @@
-var assert = require('assert');
+var expect = require('chai').expect;
 
 describe('Sample Tests', function () {
 
@@ -6,7 +6,7 @@ describe('Sample Tests', function () {
 
     it('Testing basic Math.', function () {
 
-        assert.equal(1 + 1, 2);
+        expect(1 + 1).to.equal(2);
 
     });
 
