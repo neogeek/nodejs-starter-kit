@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 
+var cors = require('cors');
 var session = require('express-session');
 var bodyParser = require('body-parser');
 var compression = require('compression');
@@ -9,6 +10,8 @@ var enrouten = require('express-enrouten');
 
 var hbs = require('express-hbs');
 var hbs_helpers = require('./static/templates/helpers.js')(hbs);
+
+app.use(cors());
 
 app.use(session({
     secret: process.env.SECRET || 'secret',

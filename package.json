@@ -11,6 +11,7 @@
     "body-parser": "1.14.1",
     "bower": "1.5.3",
     "compression": "1.6.0",
+    "cors": "2.7.1",
     "express": "4.13.3",
     "express-enrouten": "1.2.1",
     "express-hbs": "0.8.4",
