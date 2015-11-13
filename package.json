@@ -3,29 +3,29 @@
   "version": "0.0.1",
   "description": "This repo is a starter kit for working with Node.js, Handlebars (both server and client side), SASS (through node-sass), and RequireJS.",
   "engines": {
-    "node": "0.12.x"
+    "node": "5.x"
   },
   "main": "web.js",
   "license": "MIT",
   "dependencies": {
     "body-parser": "1.14.1",
-    "bower": "1.5.3",
+    "bower": "1.6.5",
     "compression": "1.6.0",
     "cors": "2.7.1",
     "express": "4.13.3",
     "express-enrouten": "1.2.1",
     "express-hbs": "0.8.4",
-    "express-session": "1.11.3",
+    "express-session": "1.12.1",
     "grunt": "0.4.5",
     "grunt-cli": "0.1.13",
-    "grunt-contrib-handlebars": "0.10.2",
+    "grunt-contrib-handlebars": "0.11.0",
     "grunt-contrib-jshint": "0.11.3",
-    "grunt-sass": "1.0.0",
+    "grunt-sass": "1.1.0",
     "load-grunt-tasks": "3.3.0",
     "requirejs": "2.1.20"
   },
   "devDependencies": {
-    "chai": "3.3.0",
+    "chai": "3.4.1",
     "grunt-contrib-watch": "0.6.1",
     "jscover": "1.0.0",
     "mocha": "2.3.3",
