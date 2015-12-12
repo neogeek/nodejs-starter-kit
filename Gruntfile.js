@@ -17,7 +17,7 @@ module.exports = function (grunt) {
                         preventIndent: true
                     },
                     processName: function (path) {
-                        return path.match(/([\w]+)\.hbs/)[1];
+                        return path.match(/([\w\-]+)\.hbs/)[1];
                     }
                 },
 
