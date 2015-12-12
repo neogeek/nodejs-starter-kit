@@ -9,7 +9,7 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "1.14.1",
-    "bower": "1.6.9",
+    "bower": "1.7.1",
     "compression": "1.6.0",
     "cors": "2.7.1",
     "express": "4.13.3",
