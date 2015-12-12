@@ -73,7 +73,12 @@ app.use(function (req, res, next) {
 
 });
 
-app.engine('hbs', hbs.express4());
+app.engine('hbs', hbs.express4({
+    partialsDir: __dirname + '/src/views/partials',
+    onCompile: function(exhbs, source) {
+        return exhbs.handlebars.compile(source, { preventIndent: true });
+    }
+}));
 
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/src/views');
