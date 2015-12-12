@@ -28,9 +28,7 @@ app.use(express.static(__dirname + '/static'));
 
 app.use(function (req, res, next) {
 
-    res.locals = {
-        layout: 'template'
-    };
+    res.locals.layout = 'template';
 
     next();
 
