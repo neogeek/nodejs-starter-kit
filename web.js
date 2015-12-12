@@ -11,6 +11,17 @@ var enrouten = require('express-enrouten');
 var hbs = require('express-hbs');
 var hbs_helpers = require('./static/templates/helpers.js')(hbs);
 
+var i18n = require('i18n');
+
+i18n.configure({
+    indent: '  ',
+    directory: __dirname + '/locales',
+    locales: ['en-us'],
+    defaultLocale: 'en-us'
+});
+
+app.use(i18n.init);
+
 app.disable('x-powered-by');
 
 app.use(cors());
@@ -29,6 +40,12 @@ app.use(compression());
 app.use(express.static(__dirname + '/static'));
 
 app.use(function (req, res, next) {
+
+    hbs.registerHelper('__', function () {
+
+        return i18n.__.apply(req, arguments);
+
+    });
 
     res.locals.layout = 'template';
 
