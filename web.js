@@ -1,3 +1,5 @@
+var config = require('./config.json');
+
 var express = require('express');
 var app = express();
 
@@ -47,6 +49,7 @@ app.use(function (req, res, next) {
 
     });
 
+    res.locals.config = config;
     res.locals.layout = 'template';
 
     next();
