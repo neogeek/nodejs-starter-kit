@@ -1,6 +1,7 @@
-[![](https://api.travis-ci.org/neogeek/nodejs-starter-kit.svg)](https://travis-ci.org/neogeek/nodejs-starter-kit)
-[![](https://david-dm.org/neogeek/nodejs-starter-kit.svg)](https://david-dm.org/neogeek/nodejs-starter-kit/)
-[![](https://david-dm.org/neogeek/nodejs-starter-kit/dev-status.svg)](https://david-dm.org/neogeek/nodejs-starter-kit/#info=devDependencies)
+[![Build Status](https://travis-ci.org/neogeek/nodejs-starter-kit.svg?branch=master)](https://travis-ci.org/neogeek/nodejs-starter-kit)
+[![Dependency Status](https://david-dm.org/neogeek/nodejs-starter-kit.svg)](https://david-dm.org/neogeek/nodejs-starter-kit)
+[![devDependency Status](https://david-dm.org/neogeek/nodejs-starter-kit/dev-status.svg)](https://david-dm.org/neogeek/nodejs-starter-kit#info=devDependencies)
+[![bitHound Overall Score](https://www.bithound.io/github/neogeek/nodejs-starter-kit/badges/score.svg)](https://www.bithound.io/github/neogeek/nodejs-starter-kit)
 
 # Node.js Starter Kit
 
