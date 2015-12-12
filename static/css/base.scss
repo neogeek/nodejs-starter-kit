@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    @include prefix('box-sizing', 'border-box');
+}
+
+body {
+    margin: 1em;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 1em;
+    line-height: 1.3em;
+}
+
+h1 {
+    font-weight: normal;
+    line-height: 1.3em;
+}
+
+a {
+    color: #00f;
+}

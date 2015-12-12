@@ -1,0 +1,13 @@
+$prefixes: '-webkit-', '-moz-', '-ms-', '-o-', '';
+
+@mixin prefix($key, $value) {
+    @each $prefix in $prefixes {
+        #{$prefix}#{unquote($key)}: #{unquote($value)};
+    }
+}
+
+@mixin prefix-value($key, $value) {
+    @each $prefix in $prefixes {
+        #{unquote($key)}: #{$prefix}#{unquote($value)};
+    }
+}
