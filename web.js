@@ -11,6 +11,8 @@ var enrouten = require('express-enrouten');
 var hbs = require('express-hbs');
 var hbs_helpers = require('./static/templates/helpers.js')(hbs);
 
+app.disable('x-powered-by');
+
 app.use(cors());
 
 app.use(session({
