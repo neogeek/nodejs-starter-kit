@@ -1,7 +1,12 @@
-var index = require('../controllers/index');
-
 module.exports = function (router) {
 
-    router.get('/', index.render);
+    router.get('/', function (req, res) {
+
+        res.render('index', {
+            title: 'Node.js Starter Kit',
+            content: 'Sample Handlebars Template'
+        });
+
+    });
 
 };
