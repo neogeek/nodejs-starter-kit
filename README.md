@@ -2,13 +2,13 @@
 [![](https://david-dm.org/neogeek/nodejs-starter-kit.svg)](https://david-dm.org/neogeek/nodejs-starter-kit/)
 [![](https://david-dm.org/neogeek/nodejs-starter-kit/dev-status.svg)](https://david-dm.org/neogeek/nodejs-starter-kit/#info=devDependencies)
 
-#Node.js Starter Kit
+# Node.js Starter Kit
 
 > This repo is a starter kit for working with [Node.js](http://nodejs.org), [Handlebars](http://handlebarsjs.com) (both server and client side), [SASS](http://sass-lang.com) (through [node-sass](https://github.com/sass/node-sass)), and [RequireJS](http://requirejs.org). Client-side dependency management is through [Bower](http://bower.io).
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-##Getting Started
+## Getting Started
 
 Run the following command to download the repo and unpack it into `/nodejs-starter-kit-master`.
 
@@ -20,7 +20,7 @@ All client-side files are located in `/static`. Bower components and compiled cl
 
 Server-side Handlebars templates are stored in `/src/views`.
 
-##Building
+## Building
 
 The following command will install all Node.js and Bower dependencies. Once all dependencies are installed it will run `grunt` compiling Handlebars and SASS files.
 
@@ -40,7 +40,7 @@ To watch for changes to any Handlebars or SASS files run:
 $ grunt watch
 ```
 
-##Testing
+## Testing
 
 Tests are powered by [mocha](http://mochajs.org/). To run all tests use this command:
 
@@ -50,7 +50,7 @@ $ npm test
 
 A `.travis.yml` configuration file is included to support automated testing through [Travis CI](https://travis-ci.org).
 
-##Server
+## Server
 
 If you have the [Heroku Toolbelt](https://toolbelt.heroku.com) installed you can start the sample applications with this command:
 
@@ -66,7 +66,7 @@ $ node web.js
 
 Once the application is running you can access it at <http://localhost:5000/>.
 
-##Bash Alias
+## Bash Alias
 
 Add the following to your `~/.bash_profile` and restart terminal. You will now be able to create a new project using the starter kit by typing `nodejs-project-builder test` (replacing _test_ with your new project name).
 
@@ -81,7 +81,7 @@ nodejs-project-builder() {
 }
 ```
 
-##Demo
+## Demo
 
 A video covering the initial setup process and basic Handlebars usage is avalible at Vimeo. <http://vimeo.com/neogeek/nodejs-starter-kit-demo>
 
