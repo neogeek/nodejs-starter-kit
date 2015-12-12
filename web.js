@@ -51,6 +51,7 @@ app.use(function (req, res, next) {
 
     res.locals.config = config;
     res.locals.layout = 'template';
+    res.locals.url = req.protocol + '://' + req.get('host') + req.originalUrl;
 
     next();
 
