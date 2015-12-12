@@ -61,6 +61,12 @@ $ foreman start
 If not, then the application can also be run using this command:
 
 ```bash
+$ npm start
+```
+
+or
+
+```bash
 $ node web.js
 ```
 
