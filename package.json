@@ -33,6 +33,7 @@
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install && ./node_modules/grunt-cli/bin/grunt default && make requirejs",
+    "start": "node web.js",
     "test": "make test"
   },
   "keywords": [
