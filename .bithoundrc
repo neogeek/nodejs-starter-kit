@@ -1,0 +1,19 @@
+{
+  "ignore": [
+    "**/test/**"
+  ],
+  "test": [
+    "**/test/**"
+  ],
+  "dependencies": {
+    "unused-ignores": [
+      "requirejs",
+      "grunt-sass",
+      "grunt-contrib-jshint",
+      "grunt-contrib-handlebars",
+      "grunt-cli",
+      "grunt",
+      "bower"
+    ]
+  }
+}
