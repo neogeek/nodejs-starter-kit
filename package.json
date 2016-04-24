@@ -9,25 +9,25 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "1.15.0",
-    "bower": "1.7.7",
+    "bower": "1.7.9",
     "compression": "1.6.1",
     "cors": "2.7.1",
     "express": "4.13.4",
     "express-enrouten": "1.3.0",
-    "express-hbs": "0.8.4",
+    "express-hbs": "1.0.0",
     "express-session": "1.13.0",
-    "grunt": "0.4.5",
-    "grunt-cli": "0.1.13",
+    "grunt": "1.0.1",
+    "grunt-cli": "1.2.0",
     "grunt-contrib-handlebars": "1.0.0",
     "grunt-contrib-jshint": "1.0.0",
     "grunt-sass": "1.1.0",
-    "i18n": "0.8.1",
-    "load-grunt-tasks": "3.4.1",
-    "requirejs": "2.1.22"
+    "i18n": "0.8.2",
+    "load-grunt-tasks": "3.5.0",
+    "requirejs": "2.2.0"
   },
   "devDependencies": {
     "chai": "3.5.0",
-    "grunt-contrib-watch": "0.6.1",
+    "grunt-contrib-watch": "1.0.0",
     "jscover": "1.0.0",
     "mocha": "2.4.5",
     "mocha-reporter-cov-summary": "0.1.1"
