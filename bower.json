@@ -4,7 +4,7 @@
   "description": "This repo is a starter kit for working with Node.js, Handlebars (both server and client side), SASS (through node-sass), and RequireJS.",
   "license": "MIT",
   "dependencies": {
-    "jquery": "2.1.4",
+    "jquery": "2.2.3",
     "handlebars": "4.0.5",
     "requirejs": "2.2.0"
   },
