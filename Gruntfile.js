@@ -29,6 +29,18 @@ module.exports = function (grunt) {
 
         },
 
+        sass: {
+
+            dist: {
+
+                files: {
+                    'static/css/styles.css': 'static/css/styles.scss'
+                }
+
+            }
+
+        },
+
         jshint: {
 
             server: {
@@ -55,18 +67,6 @@ module.exports = function (grunt) {
 
         },
 
-        sass: {
-
-            dist: {
-
-                files: {
-                    'static/css/styles.css': 'static/css/styles.scss'
-                }
-
-            }
-
-        },
-
         watch: {
 
             handlebars: {
@@ -88,6 +88,6 @@ module.exports = function (grunt) {
 
     });
 
-    grunt.registerTask('default', ['handlebars', 'jshint', 'sass']);
+    grunt.registerTask('default', ['handlebars', 'sass']);
 
 };
