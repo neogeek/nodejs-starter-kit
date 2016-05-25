@@ -1,6 +1,7 @@
 BIN=node_modules/.bin
 
 test:
+	$(BIN)/grunt jshint
 	$(BIN)/mocha ./test/specs/**/*.js
 
 requirejs:
