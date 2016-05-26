@@ -19,4 +19,9 @@ coverage:
 	rm -rf src
 	mv src-old src
 
+setup:
+	mkdir config || exit 0;
+	rm -rf config/eslint-coding-standards || exit 0;
+	(cd config && curl -L https://github.com/neogeek/eslint-coding-standards/archive/master.tar.gz | tar -xz && mv eslint-coding-standards-master eslint-coding-standards)
+
 .PHONY: test
