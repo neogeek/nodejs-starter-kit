@@ -1,0 +1,25 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "./config/eslint-coding-standards/.eslintrc-best-practice",
+    "./config/eslint-coding-standards/.eslintrc-es6",
+    "./config/eslint-coding-standards/.eslintrc-nodejs-commonjs",
+    "./config/eslint-coding-standards/.eslintrc-stylistic",
+    "./config/eslint-coding-standards/.eslintrc-variables"
+  ],
+  "rules": {
+    "valid-jsdoc": 2,
+    "no-underscore-dangle": 0
+  }
+}

@@ -7,4 +7,6 @@ static/templates/compiled.js
 
 coverage.html
 
+npm-debug.log
+
 .env

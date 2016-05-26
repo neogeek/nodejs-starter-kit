@@ -7,13 +7,12 @@
   ],
   "dependencies": {
     "unused-ignores": [
-      "requirejs",
-      "grunt-sass",
-      "grunt-contrib-jshint",
-      "grunt-contrib-handlebars",
-      "grunt-cli",
+      "bower",
+      "eslint",
       "grunt",
-      "bower"
+      "grunt-contrib-handlebars",
+      "grunt-sass",
+      "requirejs"
     ]
   }
 }

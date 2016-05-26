@@ -41,42 +41,11 @@ module.exports = function (grunt) {
 
         },
 
-        jshint: {
-
-            server: {
-                options: {
-                    jshintrc: true
-                },
-                src: ['src/**/*.js']
-            },
-
-            client: {
-                options: {
-                    jshintrc: true,
-                    ignores: ['static/js/**/*.min.js']
-                },
-                src: ['static/js/**/*.js']
-            },
-
-            tests: {
-                options: {
-                    jshintrc: true
-                },
-                src: ['test/**/*.js']
-            }
-
-        },
-
         watch: {
 
             handlebars: {
                 files: ['src/views/**/*.hbs'],
                 tasks: ['handlebars']
-            },
-
-            jshint: {
-                files: ['src/**/*.js', 'static/js/**/*.js', 'test/**/*.js'],
-                tasks: ['jshint']
             },
 
             sass: {

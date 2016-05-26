@@ -1,9 +1,9 @@
-module.exports = function (router) {
+module.exports = (router) => {
 
-    router.get('/', function (req, res) {
+    router.get('/', (req, res) => {
 
         res.render('index', {
-            page_title: req.__('Intro')
+            'page_title': req.__('Intro')
         });
 
     });

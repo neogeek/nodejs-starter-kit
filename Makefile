@@ -1,8 +1,13 @@
 BIN=node_modules/.bin
 
 test:
-	$(BIN)/grunt jshint
+	make lint
 	$(BIN)/mocha ./test/specs/**/*.js
+
+lint:
+	$(BIN)/eslint web.js
+	$(BIN)/eslint src/**/*.js
+	$(BIN)/eslint test/specs/**/*.js
 
 requirejs:
 	rm static/js/build.min.js || exit 0;

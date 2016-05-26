@@ -9,7 +9,7 @@
     "grunt",
     "handlebars",
     "jasmine",
-    "stylus",
-    "jshint"
+    "sass",
+    "eslint"
   ]
 }
