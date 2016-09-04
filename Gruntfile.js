@@ -1,6 +1,6 @@
 module.exports = function (grunt) {
 
-    require('load-grunt-tasks')(grunt);
+    grunt.loadNpmTasks('grunt-contrib-handlebars');
 
     grunt.initConfig({
 
@@ -22,41 +22,15 @@ module.exports = function (grunt) {
                 },
 
                 files: {
-                    'static/templates/compiled.js': ['src/views/**/*.hbs']
+                    'static/templates/compiled.min.js': ['src/views/**/*.hbs']
                 }
 
-            }
-
-        },
-
-        sass: {
-
-            dist: {
-
-                files: {
-                    'static/css/styles.css': 'static/css/styles.scss'
-                }
-
-            }
-
-        },
-
-        watch: {
-
-            handlebars: {
-                files: ['src/views/**/*.hbs'],
-                tasks: ['handlebars']
-            },
-
-            sass: {
-                files: ['static/css/**/*.scss'],
-                tasks: ['sass']
             }
 
         }
 
     });
 
-    grunt.registerTask('default', ['handlebars', 'sass']);
+    grunt.registerTask('default', ['handlebars']);
 
 };

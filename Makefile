@@ -12,10 +12,12 @@ lint:
 
 build:
 	$(BIN)/spire-of-babel static/js/app.js --bundle --sourcemap --minify --output static/build.min.js
+	$(BIN)/node-sass static/css/styles.scss static/css/styles.css
 
 watch:
 	make build
 	$(BIN)/spire-of-babel static/js/app.js --bundle --sourcemap --minify --watch static/js/**/*.js --output static/build.min.js
+	$(BIN)/node-sass --watch static/css/styles.scss static/css/styles.css
 
 coverage:
 	$(BIN)/jscover src src-cov
