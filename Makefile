@@ -6,16 +6,6 @@ serve:
 start:
 	node web.js
 
-test:
-	make lint
-	$(BIN)/mocha ./test/specs/**/*.js
-
-lint:
-	$(BIN)/eslint web.js
-	$(BIN)/eslint static/**/*.js --ignore-pattern **/*.min.js
-	$(BIN)/eslint src/**/*.js
-	$(BIN)/eslint test/specs/**/*.js
-
 build:
 	$(BIN)/handlebars src/views/ -f static/templates/views.js -e hbs -c handlebars
 	$(BIN)/handlebars src/views/partials/ -f static/templates/partials.js -p -e hbs -c handlebars
@@ -25,6 +15,16 @@ build:
 watch:
 	make build
 	$(BIN)/onchange 'src/views/**/*.hbs' 'static/css/**/*.scss' 'static/js/**/*.js' -- make build
+
+test:
+	make lint
+	$(BIN)/mocha ./test/specs/**/*.js
+
+lint:
+	$(BIN)/eslint web.js
+	$(BIN)/eslint static/**/*.js --ignore-pattern **/*.min.js
+	$(BIN)/eslint src/**/*.js
+	$(BIN)/eslint test/specs/**/*.js
 
 coverage:
 	$(BIN)/jscover src src-cov
