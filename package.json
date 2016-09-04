@@ -1,7 +1,7 @@
 {
   "name": "@neogeek/nodejs-starter-kit",
   "version": "0.0.1",
-  "description": "This repo is a starter kit for working with Node.js, Handlebars (both server and client side), SASS (through node-sass), and RequireJS.",
+  "description": "This repo is a starter kit for working with Node.js, Handlebars (both server and client side), SASS (through node-sass), and Babel (through spire-of-babel).",
   "engines": {
     "node": "5.x"
   },
@@ -15,10 +15,8 @@
     "express-enrouten": "1.3.0",
     "express-hbs": "1.0.3",
     "express-session": "1.14.1",
-    "grunt": "1.0.1",
-    "grunt-contrib-handlebars": "1.0.0",
+    "handlebars": "4.0.5",
     "i18n": "0.8.3",
-    "load-grunt-tasks": "3.5.2",
     "node-sass": "3.8.0",
     "spire-of-babel": "1.1.6"
   },
@@ -28,20 +26,20 @@
     "eslint": "3.4.0",
     "jscover": "1.0.0",
     "mocha": "3.0.2",
-    "mocha-reporter-cov-summary": "0.1.1"
+    "mocha-reporter-cov-summary": "0.1.1",
+    "onchange": "3.0.0"
   },
   "scripts": {
-    "postinstall": "grunt default && make build",
+    "postinstall": "make build",
     "start": "node web.js",
     "test": "make test"
   },
   "keywords": [
     "node",
-    "bower",
+    "babel",
     "express",
-    "grunt",
     "handlebars",
-    "jasmine",
+    "mocha",
     "sass",
     "eslint"
   ],

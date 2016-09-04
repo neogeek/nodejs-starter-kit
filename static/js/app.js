@@ -1,5 +1,6 @@
 const Handlebars = require('handlebars');
 
-const templates = require('../templates/compiled.min.js');
+require('../templates/views.js');
+require('../templates/partials.js');
 
-templates.partials = Handlebars.partials;
+console.log(Handlebars.templates.index());

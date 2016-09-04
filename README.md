@@ -5,7 +5,7 @@
 
 # Node.js Starter Kit
 
-> This repo is a starter kit for working with [Node.js](http://nodejs.org), [Handlebars](http://handlebarsjs.com) (both server and client side), [SASS](http://sass-lang.com) (through [node-sass](https://github.com/sass/node-sass)), and [RequireJS](http://requirejs.org). Client-side dependency management is through [Bower](http://bower.io).
+> This repo is a starter kit for working with [Node.js](http://nodejs.org), [Handlebars](http://handlebarsjs.com) (both server and client side), [SASS](http://sass-lang.com) (through [node-sass](https://github.com/sass/node-sass)), and [Babel](https://babeljs.io/) (through [spire-of-babel](https://github.com/neogeek/spire-of-babel)).
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
@@ -17,13 +17,13 @@ Run the following command to download the repo and unpack it into `/nodejs-start
 $ curl -L https://github.com/neogeek/nodejs-starter-kit/archive/master.tar.gz | tar -xz
 ```
 
-All client-side files are located in `/static`. Bower components and compiled client-side Handlebars templates generated through `grunt` are also stored here.
+All client-side files are located in `/static`.
 
 Server-side Handlebars templates are stored in `/src/views`.
 
 ## Building
 
-The following command will install all Node.js and Bower dependencies. Once all dependencies are installed it will run `grunt` compiling Handlebars and SASS files.
+The following command will install all Node.js dependencies. Once all dependencies are installed it will run `make build` compiling Handlebars and SASS files.
 
 ```bash
 $ npm install
@@ -32,13 +32,13 @@ $ npm install
 To manually compile Handlebars and SASS files run:
 
 ```bash
-$ grunt
+$ make build
 ```
 
 To watch for changes to any Handlebars or SASS files run:
 
 ```bash
-$ grunt watch
+$ make watch
 ```
 
 ## Testing
@@ -90,6 +90,6 @@ nodejs-project-builder() {
 
 ## Demo
 
-A video covering the initial setup process and basic Handlebars usage is avalible at Vimeo. <http://vimeo.com/neogeek/nodejs-starter-kit-demo>
+A video covering the initial setup process and basic Handlebars usage is available at Vimeo. <http://vimeo.com/neogeek/nodejs-starter-kit-demo>
 
 [![](http://i.vimeocdn.com/video/484145719_1280.jpg)](http://vimeo.com/neogeek/nodejs-starter-kit-demo)

@@ -1,10 +1,10 @@
 node_modules/
-static/bower_components/
 
 static/css/styles.css
 static/build.min.js
 static/build.min.js.map
-static/templates/compiled.min.js
+static/templates/partials.js
+static/templates/views.js
 
 coverage.html
 

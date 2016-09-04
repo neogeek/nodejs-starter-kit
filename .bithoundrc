@@ -7,12 +7,7 @@
   ],
   "dependencies": {
     "unused-ignores": [
-      "bower",
-      "eslint",
-      "grunt",
-      "grunt-contrib-handlebars",
-      "grunt-sass",
-      "requirejs"
+      "eslint"
     ]
   }
 }
