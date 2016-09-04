@@ -1,5 +1,11 @@
 BIN=node_modules/.bin
 
+serve:
+	$(BIN)/concurrently --kill-others --timestamp-format "HH:mm:ss" --prefix "[{index}] {time}" "make start" "make watch"
+
+start:
+	node web.js
+
 test:
 	make lint
 	$(BIN)/mocha ./test/specs/**/*.js
