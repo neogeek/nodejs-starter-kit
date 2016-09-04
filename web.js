@@ -17,10 +17,10 @@ const helpers = require('./static/templates/helpers.js');
 const i18n = require('i18n');
 
 i18n.configure({
-    'indent': '  ',
+    'defaultLocale': 'en-us',
     'directory': `${__dirname}/locales`,
-    'locales': ['en-us'],
-    'defaultLocale': 'en-us'
+    'indent': '  ',
+    'locales': ['en-us']
 });
 
 app.use(i18n.init);
@@ -30,9 +30,9 @@ app.disable('x-powered-by');
 app.use(cors());
 
 app.use(session({
-    'secret': process.env.SECRET || 'secret',
     'resave': true,
-    'saveUninitialized': true
+    'saveUninitialized': true,
+    'secret': process.env.SECRET || 'secret'
 }));
 
 app.use(bodyParser.urlencoded({'extended': true}));
@@ -66,20 +66,26 @@ app.use(enrouten({'directory': 'src/routes'}));
 app.use((err, req, res, next) => {
 
     res.status(err.status || '500');
-    res.render('error', {'status': err.status || '500', 'message': err.message});
+    res.render('error', {
+        'message': err.message,
+        'status': err.status || '500'
+    });
 
 });
 
 app.use((req, res) => {
 
     res.status('404');
-    res.render('error', {'status': '404', 'message': 'Page Not Found'});
+    res.render('error', {
+        'message': 'Page Not Found',
+        'status': '404'
+    });
 
 });
 
 app.engine('hbs', hbs.express4({
-    'partialsDir': `${__dirname}/src/views/partials`,
-    'onCompile': (exhbs, source) => exhbs.handlebars.compile(source, {'preventIndent': true})
+    'onCompile': (exhbs, source) => exhbs.handlebars.compile(source, {'preventIndent': true}),
+    'partialsDir': `${__dirname}/src/views/partials`
 }));
 
 app.set('view engine', 'hbs');
