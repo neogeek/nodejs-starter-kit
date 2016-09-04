@@ -1,35 +1,27 @@
-(function (root, factory) {
+/* eslint id-length: 0 */
 
-    'use strict';
+const Handlebars = require('express-hbs');
 
-    if (typeof define === 'function' && define.amd !== undefined) {
+const helpers = {
 
-        define(['handlebars'], factory);
+    'ifCond': (a, b, options) => {
 
-    } else if (typeof module === 'object' && module.exports !== undefined) {
+        let renderer = options.fn;
 
-        module.exports = factory;
+        if (a !== b) {
 
-    }
-
-}(null, function (Handlebars) {
-
-    'use strict';
-
-    var helpers = {
-
-        ifCond: function (a, b, options) {
-
-            return a === b ? options.fn(this) : options.inverse(this);
+            renderer = options.inverse;
 
         }
 
-    };
+        return renderer();
 
-    Object.keys(helpers).forEach(function (key) {
+    }
 
-        Handlebars.registerHelper(key, helpers[key]);
+};
 
-    });
+Object.keys(helpers).forEach((key) => {
 
-}));
+    Handlebars.registerHelper(key, helpers[key]);
+
+});

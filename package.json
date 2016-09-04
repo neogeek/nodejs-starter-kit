@@ -9,7 +9,6 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "1.15.1",
-    "bower": "1.7.9",
     "compression": "1.6.2",
     "cors": "2.7.1",
     "express": "4.13.4",
@@ -21,7 +20,7 @@
     "grunt-sass": "1.2.0",
     "i18n": "0.8.2",
     "load-grunt-tasks": "3.5.0",
-    "requirejs": "2.2.0"
+    "spire-of-babel": "1.1.6"
   },
   "devDependencies": {
     "@neogeek/eslint-config-standards": "1.1.0",
@@ -33,7 +32,7 @@
     "mocha-reporter-cov-summary": "0.1.1"
   },
   "scripts": {
-    "postinstall": "./node_modules/.bin/bower install && ./node_modules/.bin/grunt default && make requirejs",
+    "postinstall": "grunt default && make build",
     "start": "node web.js",
     "test": "make test"
   },

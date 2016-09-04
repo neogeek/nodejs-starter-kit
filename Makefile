@@ -10,11 +10,12 @@ lint:
 	$(BIN)/eslint src/**/*.js
 	$(BIN)/eslint test/specs/**/*.js
 
-requirejs:
-	rm static/js/build.min.js || exit 0;
-	$(BIN)/r.js -o static/build.config.js
-	mv static/js-build/config.js static/js/build.min.js
-	rm -rf static/js-build/
+build:
+	$(BIN)/spire-of-babel static/js/app.js --bundle --sourcemap --minify --output static/build.min.js
+
+watch:
+	make build
+	$(BIN)/spire-of-babel static/js/app.js --bundle --sourcemap --minify --watch static/js/**/*.js --output static/build.min.js
 
 coverage:
 	$(BIN)/jscover src src-cov

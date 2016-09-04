@@ -1,13 +1,5 @@
-define(function (require) {
+const Handlebars = require('handlebars');
 
-    'use strict';
+const templates = require('../templates/compiled.min.js');
 
-    var $ = require('jquery'),
-        Handlebars = require('handlebars'),
-        templates = require('templates');
-
-    templates.partials = Handlebars.partials;
-
-    console.log(templates);
-
-});
+templates.partials = Handlebars.partials;
