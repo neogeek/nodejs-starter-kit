@@ -1,1 +1,1 @@
-static/js/build.min.js
+static/**/*.min.js
