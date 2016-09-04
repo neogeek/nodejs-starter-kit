@@ -1,6 +1,6 @@
 /* eslint id-length: 0 */
 
-const Handlebars = require('express-hbs');
+const Handlebars = require('handlebars');
 
 const helpers = {
 

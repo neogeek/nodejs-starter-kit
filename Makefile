@@ -22,7 +22,7 @@ test:
 
 lint:
 	$(BIN)/eslint web.js
-	$(BIN)/eslint static/**/*.js --ignore-pattern **/*.min.js
+	$(BIN)/eslint static/js/**/*.js
 	$(BIN)/eslint src/**/*.js
 	$(BIN)/eslint test/specs/**/*.js
 

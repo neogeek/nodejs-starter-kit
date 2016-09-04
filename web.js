@@ -12,7 +12,7 @@ const enrouten = require('express-enrouten');
 
 const hbs = require('express-hbs');
 
-const helpers = require('./static/templates/helpers.js');
+const helpers = require('./static/js/helpers.js');
 
 const i18n = require('i18n');
 
