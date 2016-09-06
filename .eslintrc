@@ -1,18 +1,7 @@
 {
-  "env": {
-    "es6": true,
-    "node": true
-  },
   "extends": [
     "@neogeek/eslint-config-standards"
   ],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 6,
-    "sourceType": "module"
-  },
   "rules": {
     "id-length": 0,
     "no-underscore-dangle": 0,
