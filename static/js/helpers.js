@@ -4,6 +4,8 @@ const Handlebars = require('handlebars');
 
 const helpers = {
 
+    '__': (key) => key,
+
     'ifCond': (a, b, options) => {
 
         let renderer = options.fn;
