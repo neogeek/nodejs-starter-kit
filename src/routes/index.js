@@ -3,7 +3,8 @@ module.exports = (router) => {
     router.get('/', (req, res) => {
 
         res.render('index', {
-            'page_title': req.__('Intro')
+            'description': res.locals.config.description,
+            'title': res.locals.config.site_name
         });
 
     });
