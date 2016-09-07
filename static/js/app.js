@@ -1,6 +1,6 @@
 const Handlebars = require('handlebars');
 
-require('./templates/helpers.js');
+require('./templates/helpers.js')(Handlebars);
 require('./templates/views.min.js');
 require('./templates/partials.min.js');
 

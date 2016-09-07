@@ -1,29 +1,31 @@
 /* eslint id-length: 0 */
 
-const Handlebars = require('handlebars');
+module.exports = (Handlebars) => {
 
-const helpers = {
+    const helpers = {
 
-    '__': (key) => key,
+        '__': (key) => key,
 
-    'ifCond': (a, b, options) => {
+        'ifCond': (a, b, options) => {
 
-        let renderer = options.fn;
+            let renderer = options.fn;
 
-        if (a !== b) {
+            if (a !== b) {
 
-            renderer = options.inverse;
+                renderer = options.inverse;
+
+            }
+
+            return renderer();
 
         }
 
-        return renderer();
+    };
 
-    }
+    Object.keys(helpers).forEach((key) => {
+
+        Handlebars.registerHelper(key, helpers[key]);
+
+    });
 
 };
-
-Object.keys(helpers).forEach((key) => {
-
-    Handlebars.registerHelper(key, helpers[key]);
-
-});
