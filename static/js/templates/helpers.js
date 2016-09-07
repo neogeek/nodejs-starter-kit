@@ -1,5 +1,3 @@
-/* eslint id-length: 0 */
-
 module.exports = (Handlebars) => {
 
     const helpers = {
