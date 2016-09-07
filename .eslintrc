@@ -4,7 +4,6 @@
   ],
   "rules": {
     "id-length": 0,
-    "no-underscore-dangle": 0,
-    "valid-jsdoc": 2
+    "no-underscore-dangle": 0
   }
 }
