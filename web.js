@@ -61,8 +61,6 @@ app.use((req, res, next) => {
 
 app.use(enrouten({'directory': 'src/routes'}));
 
-/* eslint max-params: 0 */
-/* eslint no-unused-vars: 0 */
 app.use((err, req, res, next) => {
 
     res.status(err.status || '500');
