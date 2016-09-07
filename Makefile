@@ -4,7 +4,7 @@ start:
 	$(BIN)/concurrently --kill-others --timestamp-format "HH:mm:ss" --prefix "[{index}] {time}" "make serve" "make watch"
 
 serve:
-	$(BIN)/nodemon web.js
+	$(BIN)/nodemon web.js --ignore static/ --ignore test/
 
 build:
 	mkdir -p static/js/templates
@@ -15,7 +15,7 @@ build:
 
 watch:
 	make build
-	$(BIN)/onchange 'src/views/**/*.hbs' 'static/css/**/*.scss' 'static/js/**/*.js' -- make build
+	$(BIN)/onchange 'src/views/**/*.hbs' 'static/css/**/*.scss' 'static/js/**/*.js' -e 'static/**/*.min.*' -- make build
 
 test:
 	make lint
