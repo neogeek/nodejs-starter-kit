@@ -5,7 +5,7 @@
 
 # Node.js Starter Kit
 
-> This repo is a starter kit for working with [Node.js](http://nodejs.org), [Handlebars](http://handlebarsjs.com) (both server and client side), [SASS](http://sass-lang.com) (through [node-sass](https://github.com/sass/node-sass)), and [Babel](https://babeljs.io/) (through [spire-of-babel](https://github.com/neogeek/spire-of-babel)).
+> This repo is a starter kit for working with [Node.js](http://nodejs.org), [Handlebars](http://handlebarsjs.com) (both server and client side), [Sass](http://sass-lang.com) (via [node-sass](https://github.com/sass/node-sass)), and [Babel](https://babeljs.io/) (via [spire-of-babel](https://github.com/neogeek/spire-of-babel)).
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 

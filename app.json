@@ -1,6 +1,6 @@
 {
   "name": "Node.js Starter Kit",
-  "description": "This repo is a starter kit for working with Node.js, Handlebars (both server and client side), SASS (through node-sass), and Babel (through spire-of-babel).",
+  "description": "This repo is a starter kit for working with Node.js, Handlebars, Sass, and Babel.",
   "repository": "https://github.com/neogeek/nodejs-starter-kit",
   "keywords": [
     "node",
