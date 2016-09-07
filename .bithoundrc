@@ -7,7 +7,9 @@
   ],
   "dependencies": {
     "unused-ignores": [
-      "eslint"
+      "eslint",
+      "node-sass",
+      "spire-of-babel"
     ]
   }
 }
