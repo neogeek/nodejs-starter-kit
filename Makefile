@@ -8,8 +8,8 @@ start:
 
 build:
 	mkdir -p static/js/templates
-	$(BIN)/handlebars src/views/ -f static/js/templates/views.js -e hbs -c handlebars
-	$(BIN)/handlebars src/views/partials/ -f static/js/templates/partials.js -p -e hbs -c handlebars
+	$(BIN)/handlebars src/views/ -f static/js/templates/views.min.js -e hbs -c handlebars
+	$(BIN)/handlebars src/views/partials/ -f static/js/templates/partials.min.js -p -e hbs -c handlebars
 	$(BIN)/spire-of-babel static/js/app.js --bundle --sourcemap --minify --output static/build.min.js
 	$(BIN)/node-sass static/css/styles.scss static/css/styles.css
 
