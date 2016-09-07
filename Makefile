@@ -4,7 +4,7 @@ serve:
 	$(BIN)/concurrently --kill-others --timestamp-format "HH:mm:ss" --prefix "[{index}] {time}" "make start" "make watch"
 
 start:
-	node web.js
+	$(BIN)/nodemon web.js
 
 build:
 	mkdir -p static/js/templates
