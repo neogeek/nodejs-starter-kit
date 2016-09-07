@@ -1,9 +1,9 @@
 BIN=node_modules/.bin
 
-serve:
-	$(BIN)/concurrently --kill-others --timestamp-format "HH:mm:ss" --prefix "[{index}] {time}" "make start" "make watch"
-
 start:
+	$(BIN)/concurrently --kill-others --timestamp-format "HH:mm:ss" --prefix "[{index}] {time}" "make serve" "make watch"
+
+serve:
 	$(BIN)/nodemon web.js
 
 build:

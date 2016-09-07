@@ -62,13 +62,7 @@ $ foreman start
 If not, then the application can also be run using this command:
 
 ```bash
-$ npm start
-```
-
-or
-
-```bash
-$ node web.js
+$ make serve
 ```
 
 Once the application is running you can access it at <http://localhost:5000/>.
