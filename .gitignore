@@ -3,8 +3,8 @@ node_modules/
 static/css/styles.css
 static/build.min.js
 static/build.min.js.map
-static/templates/partials.js
-static/templates/views.js
+static/js/templates/partials.js
+static/js/templates/views.js
 
 coverage.html
 
