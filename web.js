@@ -44,13 +44,6 @@ app.use(express.static(`${__dirname}/static`));
 
 app.use((req, res, next) => {
 
-    /* eslint prefer-arrow-callback: 0 */
-    hbs.registerHelper('__', function helper (...args) {
-
-        return Reflect.apply(i18n.__, req, args);
-
-    });
-
     res.locals.config = config;
     res.locals.layout = 'template';
     res.locals.url = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
