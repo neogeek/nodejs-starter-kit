@@ -22,7 +22,6 @@
   },
   "devDependencies": {
     "@neogeek/eslint-config-standards": "1.2.0",
-    "chai": "3.5.0",
     "concurrently": "2.2.0",
     "eslint": "3.4.0",
     "jscover": "1.0.0",
