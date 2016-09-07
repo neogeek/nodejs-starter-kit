@@ -19,23 +19,23 @@ $ curl -L https://github.com/neogeek/nodejs-starter-kit/archive/master.tar.gz | 
 
 All client-side files are located in `/static`.
 
-Server-side Handlebars templates are stored in `/src/views`.
+Both client and server-side Handlebars templates are stored in `/src/views`.
 
 ## Building
 
-The following command will install all Node.js dependencies. Once all dependencies are installed it will run `make build` compiling Handlebars and SASS files.
+The following command will install all Node.js dependencies. Once all dependencies are installed it will run `make build` compiling Handlebars and Sass files.
 
 ```bash
 $ npm install
 ```
 
-To manually compile Handlebars and SASS files run:
+To manually compile Handlebars and Sass files run:
 
 ```bash
 $ make build
 ```
 
-To watch for changes to any Handlebars or SASS files run:
+To watch for changes to any Handlebars or Sass files run:
 
 ```bash
 $ make watch
@@ -65,7 +65,7 @@ If not, then the application can also be run using this command:
 $ make serve
 ```
 
-Once the application is running you can access it at <http://localhost:5000/>.
+Once the application is running it can be accessed at <http://localhost:5000/>.
 
 ## Bash Alias
 
