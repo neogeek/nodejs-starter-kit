@@ -6,7 +6,7 @@ static/build.min.js.map
 static/js/templates/partials.min.js
 static/js/templates/views.min.js
 
-coverage.html
+coverage/
 
 npm-debug.log
 
