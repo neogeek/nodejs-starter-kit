@@ -75,8 +75,10 @@ Add the following to your `~/.bash_profile` and restart terminal. You will now b
 nodejs-project-builder() {
 
     curl -L https://github.com/neogeek/nodejs-starter-kit/archive/master.tar.gz | tar -xz
-    mv nodejs-starter-kit-master "$1"
-    cd "$1"
+    mkdir -p "${1}"
+    mv nodejs-starter-kit-master/{*,.[^.]*} "${1}"
+    rm -d nodejs-starter-kit-master
+    cd "${1}" || exit
     npm install
 
 }
