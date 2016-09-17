@@ -10,25 +10,25 @@
   "dependencies": {
     "body-parser": "1.15.2",
     "compression": "1.6.2",
-    "cors": "2.8.0",
+    "cors": "2.8.1",
     "express": "4.14.0",
     "express-enrouten": "1.3.0",
     "express-hbs": "1.0.3",
     "express-session": "1.14.1",
     "handlebars": "4.0.5",
     "i18n": "0.8.3",
-    "node-sass": "3.9.3",
-    "spire-of-babel": "1.1.8"
+    "node-sass": "3.10.0",
+    "spire-of-babel": "1.1.9"
   },
   "devDependencies": {
-    "@neogeek/eslint-config-standards": "1.2.0",
+    "@neogeek/eslint-config-standards": "1.4.0",
     "concurrently": "2.2.0",
-    "eslint": "3.4.0",
+    "eslint": "3.5.0",
     "istanbul": "0.4.5",
     "mocha": "3.0.2",
     "mocha-reporter-cov-summary": "0.1.1",
     "nodemon": "1.10.2",
-    "onchange": "3.0.0"
+    "onchange": "3.0.2"
   },
   "scripts": {
     "postinstall": "make build",
