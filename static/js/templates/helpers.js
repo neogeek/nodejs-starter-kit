@@ -1,4 +1,4 @@
-module.exports = (Handlebars) => {
+module.exports = Handlebars => {
 
     const helpers = {
 
@@ -18,7 +18,7 @@ module.exports = (Handlebars) => {
 
     };
 
-    Object.keys(helpers).forEach((key) => {
+    Object.keys(helpers).forEach(key => {
 
         Handlebars.registerHelper(key, helpers[key]);
 
