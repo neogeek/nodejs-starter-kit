@@ -25,8 +25,8 @@ const renderView = (view, data) => {
 };
 
 fetch('/api/locales')
-    .then((response) => response.json())
-    .then((data) => {
+    .then(response => response.json())
+    .then(data => {
 
         locales = data;
 
