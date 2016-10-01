@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "This repo is a starter kit for working with Node.js, Handlebars, Sass, and Babel.",
   "engines": {
-    "node": "6.x"
+    "node": ">=6.0"
   },
   "main": "web.js",
   "license": "MIT",
