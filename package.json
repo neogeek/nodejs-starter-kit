@@ -18,12 +18,12 @@
     "handlebars": "4.0.5",
     "i18n": "0.8.3",
     "node-sass": "3.10.1",
-    "spire-of-babel": "1.1.11"
+    "spire-of-babel": "1.1.13"
   },
   "devDependencies": {
     "@neogeek/eslint-config-standards": "1.6.0",
-    "concurrently": "3.0.0",
-    "eslint": "3.7.0",
+    "concurrently": "3.1.0",
+    "eslint": "3.7.1",
     "istanbul": "0.4.5",
     "mocha": "3.1.0",
     "mocha-reporter-cov-summary": "0.1.1",
