@@ -21,13 +21,13 @@
     "spire-of-babel": "1.1.13"
   },
   "devDependencies": {
-    "@neogeek/eslint-config-standards": "1.6.0",
+    "@neogeek/eslint-config-standards": "1.6.2",
     "concurrently": "3.1.0",
     "eslint": "3.7.1",
     "istanbul": "0.4.5",
     "mocha": "3.1.0",
     "mocha-reporter-cov-summary": "0.1.1",
-    "nodemon": "1.10.2",
+    "nodemon": "1.11.0",
     "onchange": "3.0.2"
   },
   "scripts": {
