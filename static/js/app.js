@@ -6,7 +6,7 @@ require('./templates/partials.min.js');
 
 let locales = {};
 
-Handlebars.registerHelper('__', (key) => {
+Handlebars.registerHelper('__', key => {
 
     if (locales[key]) {
 
