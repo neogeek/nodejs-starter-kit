@@ -19,15 +19,15 @@ watch:
 
 test:
 	make lint
-	$(BIN)/mocha ./test/specs/**/*.js
+	$(BIN)/mocha test/specs/
 
 lint:
 	$(BIN)/eslint web.js
-	$(BIN)/eslint static/js/**/*.js
-	$(BIN)/eslint src/**/*.js
-	$(BIN)/eslint test/specs/**/*.js
+	$(BIN)/eslint static/js/
+	$(BIN)/eslint src/
+	$(BIN)/eslint test/specs/
 
 coverage:
-	$(BIN)/istanbul cover $(BIN)/_mocha ./test/specs
+	$(BIN)/istanbul cover $(BIN)/_mocha test/specs/
 
 .PHONY: test coverage
