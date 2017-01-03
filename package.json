@@ -17,7 +17,7 @@
     "express-session": "1.14.2",
     "handlebars": "4.0.6",
     "i18n": "0.8.3",
-    "node-sass": "4.0.0",
+    "node-sass": "4.1.1",
     "spire-of-babel": "1.1.18"
   },
   "devDependencies": {
@@ -27,7 +27,7 @@
     "istanbul": "0.4.5",
     "mocha": "3.2.0",
     "nodemon": "1.11.0",
-    "onchange": "3.2.0"
+    "onchange": "3.2.1"
   },
   "scripts": {
     "postinstall": "make build",
