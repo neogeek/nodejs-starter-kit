@@ -6,6 +6,7 @@
 [![Dependency Status](https://david-dm.org/neogeek/nodejs-starter-kit.svg)](https://david-dm.org/neogeek/nodejs-starter-kit)
 [![devDependency Status](https://david-dm.org/neogeek/nodejs-starter-kit/dev-status.svg)](https://david-dm.org/neogeek/nodejs-starter-kit?type=dev)
 [![bitHound Overall Score](https://www.bithound.io/github/neogeek/nodejs-starter-kit/badges/score.svg)](https://www.bithound.io/github/neogeek/nodejs-starter-kit)
+[![Greenkeeper badge](https://badges.greenkeeper.io/neogeek/nodejs-starter-kit.svg)](https://greenkeeper.io/)
 
 ## Install to Heroku
 
