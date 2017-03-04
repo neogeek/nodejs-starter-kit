@@ -23,7 +23,7 @@
   "devDependencies": {
     "@neogeek/eslint-config-standards": "1.13.1",
     "concurrently": "3.3.0",
-    "eslint": "3.16.1",
+    "eslint": "3.17.0",
     "istanbul": "0.4.5",
     "mocha": "3.2.0",
     "nodemon": "1.11.0",
