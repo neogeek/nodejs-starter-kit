@@ -10,7 +10,7 @@
   "dependencies": {
     "body-parser": "1.17.1",
     "compression": "1.6.2",
-    "cors": "2.8.1",
+    "cors": "2.8.2",
     "express": "4.15.2",
     "express-enrouten": "1.3.0",
     "express-hbs": "1.0.4",
