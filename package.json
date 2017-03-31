@@ -21,13 +21,13 @@
     "spire-of-babel": "1.2.2"
   },
   "devDependencies": {
-    "@neogeek/eslint-config-standards": "1.15.0",
-    "concurrently": "3.4.0",
-    "eslint": "3.18.0",
-    "istanbul": "0.4.5",
-    "mocha": "3.2.0",
-    "nodemon": "1.11.0",
-    "onchange": "3.2.1"
+    "@neogeek/eslint-config-standards": "^1.15.0",
+    "concurrently": "^3.4.0",
+    "eslint": "^3.18.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0",
+    "onchange": "^3.2.1"
   },
   "scripts": {
     "postinstall": "make build",
