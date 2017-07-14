@@ -21,7 +21,7 @@
     "spire-of-babel": "1.2.4"
   },
   "devDependencies": {
-    "@neogeek/eslint-config-standards": "^1.15.0",
+    "@neogeek/eslint-config-standards": "^2.0.0",
     "concurrently": "^3.4.0",
     "eslint": "^3.18.0",
     "istanbul": "^0.4.5",
