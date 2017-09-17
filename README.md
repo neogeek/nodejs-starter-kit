@@ -72,7 +72,7 @@ Once the application is running it can be accessed at <http://localhost:5000/>.
 
 ## Bash Alias
 
-Add the following to your `~/.bash_profile` and restart terminal. You will now be able to create a new project using the starter kit by typing `nodejs-project-builder test` (replacing _test_ with your new project name).
+Add the following to your `~/.bash_profile` and restart terminal. You will now be able to create a new project using the starter kit by typing `create-nodejs-starter-kittest` (replacing _test_ with your new project name).
 
 ```bash
 create-nodejs-starter-kit() {
