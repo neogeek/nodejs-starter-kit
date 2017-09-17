@@ -8,6 +8,8 @@ static/js/templates/views.min.js
 
 coverage/
 
+package-lock.json
+
 npm-debug.log
 
 .env
