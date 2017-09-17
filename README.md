@@ -75,7 +75,7 @@ Once the application is running it can be accessed at <http://localhost:5000/>.
 Add the following to your `~/.bash_profile` and restart terminal. You will now be able to create a new project using the starter kit by typing `nodejs-project-builder test` (replacing _test_ with your new project name).
 
 ```bash
-nodejs-project-builder() {
+create-nodejs-starter-kit() {
 
     curl -L https://github.com/neogeek/nodejs-starter-kit/archive/master.tar.gz | tar -xz
     mkdir -p "${1}"
