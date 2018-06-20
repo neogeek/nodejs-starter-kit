@@ -18,7 +18,8 @@
     "handlebars": "4.0.11",
     "i18n": "0.8.3",
     "node-sass": "4.9.0",
-    "spire-of-babel": "1.4.0"
+    "spire-of-babel": "1.4.0",
+    "snyk": "^1.83.0"
   },
   "devDependencies": {
     "@neogeek/eslint-config-standards": "^2.0.0",
@@ -32,7 +33,9 @@
   "scripts": {
     "postinstall": "make build",
     "start": "node web.js",
-    "test": "make test"
+    "test": "make test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [
     "node",
@@ -47,5 +50,6 @@
     "type": "git",
     "url": "git://github.com/neogeek/nodejs-starter-kit.git"
   },
-  "private": true
+  "private": true,
+  "snyk": true
 }
