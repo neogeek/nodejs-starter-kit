@@ -2,12 +2,5 @@
   "name": "Node.js Starter Kit",
   "description": "This repo is a starter kit for working with Node.js, Handlebars, Sass, and Babel.",
   "repository": "https://github.com/neogeek/nodejs-starter-kit",
-  "keywords": [
-    "node",
-    "babel",
-    "express",
-    "handlebars",
-    "mocha",
-    "sass"
-  ]
+  "keywords": ["node", "babel", "express", "handlebars", "mocha", "sass"]
 }
