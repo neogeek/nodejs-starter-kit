@@ -1,10 +1,7 @@
 language: node_js
 node_js:
-  - "6"
-  - "7"
-  - "8"
-  - "9"
-  - "10"
-before_install:
-  - if [[ `npm -v` != 6* ]]; then npm i -g npm@6; fi
-sudo: false
+  - "12"
+after_success:
+  - node --version
+  - npm --version
+  - npm test
