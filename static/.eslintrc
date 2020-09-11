@@ -1,7 +1,0 @@
-{
-  "globals": {
-    "document": true,
-    "fetch": true,
-    "window": true
-  }
-}

@@ -18,14 +18,7 @@ watch:
 	$(BIN)/onchange 'src/views/**/*.hbs' 'static/css/**/*.scss' 'static/js/**/*.js' -e 'static/**/*.min.*' -- make build
 
 test:
-	make lint
 	$(BIN)/mocha test/specs/
-
-lint:
-	$(BIN)/eslint web.js
-	$(BIN)/eslint static/js/
-	$(BIN)/eslint src/
-	$(BIN)/eslint test/specs/
 
 coverage:
 	$(BIN)/istanbul cover $(BIN)/_mocha test/specs/
