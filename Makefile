@@ -16,11 +16,3 @@ build:
 watch:
 	make build
 	$(BIN)/onchange 'src/views/**/*.hbs' 'static/css/**/*.scss' 'static/js/**/*.js' -e 'static/**/*.min.*' -- make build
-
-test:
-	$(BIN)/mocha test/specs/
-
-coverage:
-	$(BIN)/istanbul cover $(BIN)/_mocha test/specs/
-
-.PHONY: test coverage
