@@ -6,7 +6,7 @@
 
 ## Install to Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fneogeek%2Fnodejs-starter-kit)
 
 ## Getting Started
 
