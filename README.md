@@ -3,9 +3,6 @@
 > This repo is a starter kit for working with [Node.js](http://nodejs.org), [Handlebars](http://handlebarsjs.com) (both server and client side), [Sass](http://sass-lang.com) (via [node-sass](https://github.com/sass/node-sass)), and [Babel](https://babeljs.io/) (via [spire-of-babel](https://github.com/neogeek/spire-of-babel)).
 
 [![Build Status](https://travis-ci.org/neogeek/nodejs-starter-kit.svg?branch=master)](https://travis-ci.org/neogeek/nodejs-starter-kit)
-[![Dependency Status](https://david-dm.org/neogeek/nodejs-starter-kit.svg)](https://david-dm.org/neogeek/nodejs-starter-kit)
-[![devDependency Status](https://david-dm.org/neogeek/nodejs-starter-kit/dev-status.svg)](https://david-dm.org/neogeek/nodejs-starter-kit?type=dev)
-[![Greenkeeper badge](https://badges.greenkeeper.io/neogeek/nodejs-starter-kit.svg)](https://greenkeeper.io/)
 
 ## Install to Heroku
 
